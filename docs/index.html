@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ספרייה יהודית | Jewish EPUB Library</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;700&family=Assistant:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+
+    <div id="app-container">
+        <header class="site-header">
+            <div class="header-content">
+                <h1>אוצר הספרים הדיגיטלי</h1>
+                <p class="subtitle">ניווט, חיפוש והורדה של ספרים יהודיים בפורמט EPUB</p>
+                <div class="search-container">
+                    <input type="text" id="search-input" placeholder="חפש ספר, מחבר או קטגוריה...">
+                </div>
+            </div>
+        </header>
+
+        <div class="main-layout">
+            <aside class="sidebar">
+                <h2>קטגוריות</h2>
+                <nav id="category-nav">
+                    <!-- Categories will be dynamically inserted here -->
+                </nav>
+            </aside>
+
+            <main class="content-area">
+                <div id="loader" class="loader"></div>
+                <div id="book-grid" class="book-grid">
+                    <!-- Book cards will be dynamically inserted here -->
+                </div>
+                <div id="no-results" class="no-results" style="display: none;">
+                    <p>לא נמצאו ספרים התואמים את החיפוש.</p>
+                </div>
+            </main>
+        </div>
+
+        <footer class="site-footer">
+            <p>נוצר על ידי <a href="https://mitmachim.top/user/cfopuser" target="_blank">@cfopuser</a></p>
+        </footer>
+    </div>
+
+</body>
+</html>
